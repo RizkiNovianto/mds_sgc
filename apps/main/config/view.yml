@@ -1,0 +1,17 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        symfony project
+    robots:       index, follow
+    description:  symfony project
+    keywords:     symfony, project
+    language:     en
+
+  stylesheets:    [main, animate, bootstrap, custom, font-awesome, nexus, responsive]
+
+  javascripts:    [bootstrap.min, jquery.isotope, jquery.min, jquery.slicknav, jquery.sticky, jquery.visible, modernizr.custom, scripts, slimbox]
+
+  has_layout:     on
+  layout:         layout

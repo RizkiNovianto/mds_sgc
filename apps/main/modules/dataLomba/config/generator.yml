@@ -1,0 +1,10 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      DataLomba
+    theme:            default
+    
+    edit:
+        fields:
+            file_foto_peserta:
+                type: admin_input_file_tag

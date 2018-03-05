@@ -1,0 +1,8 @@
+create:
+    credentials: [administrator]
+	
+delete:
+    credentials: [administrator]
+	
+list:
+    credentials: [administrator]

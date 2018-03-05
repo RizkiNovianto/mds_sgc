@@ -1,0 +1,18 @@
+methods:
+  post: [username, password]
+
+names:
+  username:
+    required:         true
+    required_msg:     Username harus diisi
+    validators:       [userValidator]
+
+  password:
+    required:         true
+    required_msg:     Password harus diisi
+
+userValidator:
+    class:            sfGuardUserValidator
+    param:
+      password_field: password
+      remember_field: remember

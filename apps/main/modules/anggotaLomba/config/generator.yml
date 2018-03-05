@@ -1,0 +1,15 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      AnggotaLomba
+    theme:            default
+    
+    list:
+        title: Daftar Anggota Tim
+        display: [peserta_lomba, nama, usia, alamat, no_telp, _image_view, filename_baru]
+    
+    edit:
+        title: Form Pengisian Data Anggota
+        fields:
+            file_foto:
+                type: admin_input_file_tag

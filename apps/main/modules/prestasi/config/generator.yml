@@ -1,0 +1,10 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Prestasi
+    theme:            default
+    
+    edit:
+        fields:
+            file_piagam:
+                type: admin_input_file_tag

@@ -1,0 +1,467 @@
+---
+propel: 
+  _attributes: 
+    package: lib.model
+  anggota_lomba: 
+    _attributes: 
+      idMethod: native
+    id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_peserta_lomba: 
+      type: INTEGER
+      required: true
+      foreignTable: peserta_lomba
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    nama: 
+      type: VARCHAR
+      size: 255
+      required: true
+    usia: 
+      type: TINYINT
+    alamat: 
+      type: VARCHAR
+      size: 255
+    no_telp: 
+      type: VARCHAR
+      size: 13
+    file_foto: 
+      type: VARCHAR
+      size: 255
+    filename_baru: 
+      type: VARCHAR
+      size: 255
+    created_at: 
+      type: TIMESTAMP
+    updated_at: 
+      type: TIMESTAMP
+    is_deleted: 
+      type: TINYINT
+      default: 0
+    _indexes: 
+      FK_anggota_peserta_lomba: 
+        - id_peserta_lomba
+  data_lomba: 
+    _attributes: 
+      idMethod: native
+    id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_peserta_lomba: 
+      type: INTEGER
+      required: true
+      foreignTable: peserta_lomba
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    file_foto_peserta: 
+      type: VARCHAR
+      size: 255
+      required: true
+    filename_baru: 
+      type: VARCHAR
+      size: 255
+    keterangan: 
+      type: LONGVARCHAR
+    created_at: 
+      type: TIMESTAMP
+    updated_at: 
+      type: TIMESTAMP
+    is_deleted: 
+      type: TINYINT
+      default: 0
+    _indexes: 
+      FK_data_lomba_peserta: 
+        - id_peserta_lomba
+  lomba: 
+    _attributes: 
+      idMethod: native
+    id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    nama: 
+      type: VARCHAR
+      size: 50
+      required: true
+    tingkat: 
+      type: VARCHAR
+      size: 50
+      required: true
+    kategori: 
+      type: VARCHAR
+      size: 50
+      required: true
+    deskripsi: 
+      type: LONGVARCHAR
+    created_at: 
+      type: TIMESTAMP
+    updated_at: 
+      type: TIMESTAMP
+    is_deleted: 
+      type: TINYINT
+      default: 0
+  pengguna: 
+    _attributes: 
+      idMethod: native
+    id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_wilayah: 
+      type: INTEGER
+      required: true
+      foreignTable: wilayah
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_sfGuardUser: 
+      type: INTEGER
+      required: true
+      foreignTable: sf_guard_user
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    nama: 
+      type: VARCHAR
+      size: 255
+      required: true
+    no_telp: 
+      type: VARCHAR
+      size: 13
+    file_foto: 
+      type: VARCHAR
+      size: 255
+    filename_baru: 
+      type: VARCHAR
+      size: 255
+    keterangan: 
+      type: LONGVARCHAR
+    created_at: 
+      type: TIMESTAMP
+    updated_at: 
+      type: TIMESTAMP
+    is_deleted: 
+      type: TINYINT
+      default: 0
+    _indexes: 
+      FK_pengguna_wilayah: 
+        - id_wilayah
+      FK_pengguna_sfGuard: 
+        - id_sfGuardUser
+  peserta: 
+    _attributes: 
+      idMethod: native
+    id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_wilayah: 
+      type: INTEGER
+      required: true
+      foreignTable: wilayah
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    RT: 
+      type: VARCHAR
+      size: 10
+      required: true
+    RW: 
+      type: VARCHAR
+      size: 10
+      required: true
+    ketua_RT: 
+      type: VARCHAR
+      size: 255
+    ketua_RW: 
+      type: VARCHAR
+      size: 255
+    created_at: 
+      type: TIMESTAMP
+    updated_at: 
+      type: TIMESTAMP
+    is_deleted: 
+      type: TINYINT
+      default: 0
+    _indexes: 
+      FK_peserta_wilayah: 
+        - id_wilayah
+  peserta_lomba: 
+    _attributes: 
+      idMethod: native
+    id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_peserta: 
+      type: INTEGER
+      required: true
+      foreignTable: peserta
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_lomba: 
+      type: INTEGER
+      required: true
+      foreignTable: lomba
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    tahun: 
+      type: INTEGER
+      required: true
+    nama_tim: 
+      type: VARCHAR
+      size: 255
+      required: true
+    nama_penggerak_lingkungan: 
+      type: VARCHAR
+      size: 255
+    tanggal_pendaftaran: 
+      type: TIMESTAMP
+      required: true
+    program_kerja: 
+      type: LONGVARCHAR
+    catatan: 
+      type: LONGVARCHAR
+    created_at: 
+      type: TIMESTAMP
+    updated_at: 
+      type: TIMESTAMP
+    is_deleted: 
+      type: TINYINT
+      default: 0
+    _indexes: 
+      FK_peserta_lomba: 
+        - id_peserta
+      FK_peserta_lomba_2: 
+        - id_lomba
+  prestasi: 
+    _attributes: 
+      idMethod: native
+    id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_peserta_lomba: 
+      type: INTEGER
+      required: true
+      foreignTable: peserta_lomba
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    prestasi: 
+      type: VARCHAR
+      size: 255
+      required: true
+    file_piagam: 
+      type: VARCHAR
+      size: 255
+      required: true
+    filename_baru: 
+      type: VARCHAR
+      size: 255
+    keterangan: 
+      type: LONGVARCHAR
+    created_at: 
+      type: TIMESTAMP
+    updated_at: 
+      type: TIMESTAMP
+    is_deleted: 
+      type: TINYINT
+      default: 0
+    _indexes: 
+      FK_prestasi_peserta: 
+        - id_peserta_lomba
+  sf_guard_group: 
+    _attributes: 
+      idMethod: native
+    id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    name: 
+      type: VARCHAR
+      size: 255
+      required: true
+    description: 
+      type: LONGVARCHAR
+    _uniques: 
+      sf_guard_group_name_unique: 
+        - name
+  sf_guard_group_permission: 
+    group_id: 
+      type: INTEGER
+      required: true
+      primaryKey: true
+      foreignTable: sf_guard_group
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: RESTRICT
+    permission_id: 
+      type: INTEGER
+      required: true
+      primaryKey: true
+      foreignTable: sf_guard_permission
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: RESTRICT
+    _indexes: 
+      sf_guard_group_permission_FI_2: 
+        - permission_id
+  sf_guard_permission: 
+    _attributes: 
+      idMethod: native
+    id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    name: 
+      type: VARCHAR
+      size: 255
+      required: true
+    description: 
+      type: LONGVARCHAR
+    _uniques: 
+      sf_guard_permission_name_unique: 
+        - name
+  sf_guard_remember_key: 
+    user_id: 
+      type: INTEGER
+      required: true
+      primaryKey: true
+      foreignTable: sf_guard_user
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: RESTRICT
+    remember_key: 
+      type: VARCHAR
+      size: 32
+    ip_address: 
+      type: VARCHAR
+      size: 50
+      required: true
+      primaryKey: true
+    created_at: 
+      type: TIMESTAMP
+  sf_guard_user: 
+    _attributes: 
+      idMethod: native
+    id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    username: 
+      type: VARCHAR
+      size: 128
+      required: true
+    algorithm: 
+      type: VARCHAR
+      size: 128
+      required: true
+      default: sha1
+    salt: 
+      type: VARCHAR
+      size: 128
+      required: true
+    password: 
+      type: VARCHAR
+      size: 128
+      required: true
+    created_at: 
+      type: TIMESTAMP
+    last_login: 
+      type: TIMESTAMP
+    is_active: 
+      type: INTEGER
+      required: true
+      default: 1
+    is_super_admin: 
+      type: INTEGER
+      required: true
+      default: 0
+    _uniques: 
+      sf_guard_user_username_unique: 
+        - username
+  sf_guard_user_group: 
+    user_id: 
+      type: INTEGER
+      required: true
+      primaryKey: true
+      foreignTable: sf_guard_user
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: RESTRICT
+    group_id: 
+      type: INTEGER
+      required: true
+      primaryKey: true
+      foreignTable: sf_guard_group
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: RESTRICT
+    _indexes: 
+      sf_guard_user_group_FI_2: 
+        - group_id
+  sf_guard_user_permission: 
+    user_id: 
+      type: INTEGER
+      required: true
+      primaryKey: true
+      foreignTable: sf_guard_user
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: RESTRICT
+    permission_id: 
+      type: INTEGER
+      required: true
+      primaryKey: true
+      foreignTable: sf_guard_permission
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: RESTRICT
+    _indexes: 
+      sf_guard_user_permission_FI_2: 
+        - permission_id
+  wilayah: 
+    _attributes: 
+      idMethod: native
+    id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    wilayah: 
+      type: VARCHAR
+      size: 20
+      required: true
+    kecamatan: 
+      type: VARCHAR
+      size: 25
+      required: true
+    kelurahan: 
+      type: VARCHAR
+      size: 25
+      required: true
+    nama_lurah: 
+      type: VARCHAR
+      size: 255
+    created_at: 
+      type: TIMESTAMP
+    updated_at: 
+      type: TIMESTAMP
