@@ -10,6 +10,26 @@
  */
 class prestasiActions extends autoprestasiActions
 {
+  public function executeDownloadRequest()
+  {
+      $id = $this->getRequestParameter('id');
+      $prestasiTemp = PrestasiPeer::retrieveByPK($id);
+      $dataUploadDir = sfConfig::get('sf_upload_dir')."/Lomba/Piagam/";
+      $file = $dataUploadDir.$prestasiTemp->getFilenameBaru().'.png';
+      if (file_exists($file)) 
+      {
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
+        header('Content-Disposition: attachment; filename="'.basename($file).'"');
+        header('Expires: 0');
+        header('Cache-Control: must-revalidate');
+        header('Pragma: public');
+        header('Content-Length: ' . filesize($file));
+        readfile($file);
+        exit;
+      }
+  }
+    
     protected function savePrestasi($prestasi)
   {
     $prestasi->save();

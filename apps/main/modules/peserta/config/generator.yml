@@ -3,3 +3,23 @@ generator:
   param:
     model_class:      Peserta
     theme:            default
+    
+    fields:
+        id_wilayah:
+            name: Wilayah
+        rt:
+            name: RT
+        rw:
+            name: RW
+        ketua_rt:
+            name: Ketua RT
+        ketua_rw:
+            name: Ketua RW
+    
+    list:
+        title: Data RT/RW
+        display: [wilayah, rt, rw, ketua_rt, ketua_rw, _opsi]
+        
+    edit:
+        title: Form Pengisian Data RT/RW
+        display: [id_wilayah, rt, rw, ketua_rt, ketua_rw]

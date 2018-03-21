@@ -9,4 +9,9 @@
  */ 
 class Peserta extends BasePeserta
 {
+	public function __toString()
+    {
+		$passText = $this->getWilayah().'</br> RT '.$this->getRT().'/RW '.$this->getRW();
+        return $passText;
+    }
 }

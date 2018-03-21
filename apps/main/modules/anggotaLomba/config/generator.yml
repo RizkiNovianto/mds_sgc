@@ -4,12 +4,29 @@ generator:
     model_class:      AnggotaLomba
     theme:            default
     
+    fields:
+        id_peserta_lomba:
+            name: Nama Tim
+        peserta_lomba:
+            name: Nama Tim
+        nama:
+            name: Nama Anggota
+        no_telp:
+            name: No. Telp
+        image_view:
+            name: Foto
+        file_foto:
+            name: File Foto
+        filename_baru:
+            name: Nama File
+    
     list:
-        title: Daftar Anggota Tim
-        display: [peserta_lomba, nama, usia, alamat, no_telp, _image_view, filename_baru]
+        title: Data Anggota Tim
+        display: [peserta_lomba, nama, usia, alamat, no_telp, _image_view, _opsi]
     
     edit:
         title: Form Pengisian Data Anggota
+        display: [id_peserta_lomba, nama, usia, alamat, no_telp, file_foto, filename_baru]
         fields:
             file_foto:
                 type: admin_input_file_tag

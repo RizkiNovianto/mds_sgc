@@ -167,7 +167,7 @@
   border: 1px solid #ddd;
   border-bottom: 0px;
   background-color: #fff;
-  width: 600px;
+  width: 700px;
 }
 
 #sf_admin_container fieldset.collapsed * { display:none; }

@@ -52,8 +52,18 @@
                 <div class="container">
                     <div class="row">
                         <!-- Logo -->
-                        <div class="logo">
-                            <?php echo link_to(image_tag('/images/logo_header_fix.png', array('alt'=>'Logo', 'style'=>'height: 160px')), 'home')?>
+                        <div class="row">
+                            <!-- Icons -->
+                            <div class="col-md-4 text-center">
+                                <?php echo image_tag('/images/Logo DKRTH Trans.png', 'style="max-height: 75px; margin-top: 60px"')?>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <?php echo image_tag('/images/header_sby_trans.png', 'style="max-height: 180px;"')?>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <?php echo image_tag('/images/logo-pemkot-biru.png', 'style="max-height: 150px; margin-top: 25px"')?>
+                            </div>
+                            <!-- End Icons -->
                         </div>
                         <!-- End Logo -->
                     </div>
@@ -77,8 +87,8 @@
                                                 <?php echo link_to('<i class="fa fa-fw fa-trash-o"></i> Lomba', 'lomba')?>
                                             </li>
                                             <li>
-                                                <?php echo link_to('<i class="fa fa-fw fa-smile-o"></i> Peserta', 'pesertaLomba')?>
-                                            </li>
+                                                <?php echo link_to('<i class="fa fa-fw fa-users"></i> RT/RW', 'peserta')?>
+                                            </li>                                    
                                             <li>
                                                 <?php echo link_to('<i class="fa fa-fw fa-users"></i> Prestasi', 'prestasi')?>
                                             </li>
@@ -88,8 +98,8 @@
                                         <span class="fa-user">Peserta</span>
                                         <ul>
                                             <li>
-                                                <?php echo link_to('<i class="fa fa-fw fa-users"></i> Tim (RT/RW)', 'peserta')?>
-                                            </li>                                    
+                                                <?php echo link_to('<i class="fa fa-fw fa-smile-o"></i> Peserta', 'pesertaLomba')?>
+                                            </li>
                                             <li>
                                                 <?php echo link_to('<i class="fa fa-fw fa-home"></i> Anggota Tim', 'anggotaLomba')?>
                                             </li>
@@ -110,7 +120,7 @@
                         <div class="col-md-4 no-padding">
                             <ul class="social-icons pull-right">
                                 <li class="social-rss">
-                                    <a href="#" target="_blank" title="RSS"></a>
+                                    <a href="#" target="_blank" title="Instagram"></a>
                                 </li>
                                 <li class="social-twitter">
                                     <a href="#" target="_blank" title="Twitter"></a>
@@ -129,8 +139,48 @@
             <!-- End Top Menu -->
             <!-- === END HEADER === -->
 
-            
-<?php echo $sf_data->getRaw('sf_content') ?>
+
+<?php if ($sf_params->get('module')!='home'){ ?><div class="container background-white bottom-border" style="width: 100%"><?php } ?>
+<?php echo $sf_data->getRaw('sf_content') ?> 
+<?php if ($sf_params->get('module')!='home'){ ?></div> <?php } ?>
+
+                        <!-- Footer -->
+            <div id="footer" class="background-grey">
+                <div class="container">
+                    <div class="row">
+                        <!-- Footer Menu -->
+                        <div id="footermenu" class="col-md-8">
+                            <ul class="list-unstyled list-inline">
+                                <?php /*<li>
+                                    <a href="#" target="_blank">Sample Link</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Sample Link</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Sample Link</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Sample Link</a>
+                                </li>*/?>
+                            </ul>
+                        </div>
+                        <!-- End Footer Menu -->
+                        <!-- Copyright -->
+                        <div id="copyright" class="col-md-4">
+                            <p class="pull-right">© Dinas Kebersihan dan Ruang Terbuka Hijau</br>
+                                Kota Surabaya, 2018</br>
+                                <span style="color: transparent">
+                                    Rizki Novianto, IT DKRTH</br>
+                                    Email: novianto.rizki091@gmail.com
+                                </span>
+                            </p>
+                        </div>
+                        <!-- End Copyright -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer -->
 
 </body>
             <!-- JS -->

@@ -4,7 +4,25 @@ generator:
     model_class:      DataLomba
     theme:            default
     
+    fields:
+        id_peserta_lomba:
+            name: Nama Tim
+        peserta_lomba:
+            name: Nama Tim
+        file_foto_peserta:
+            name: File Foto Wilayah
+        filename_baru:
+            name: Nama Foto
+        image_view:
+            name: Foto Profil Wilayah
+    
+    list:
+        title: Data Foto Profil Wilayah
+        display: [peserta_lomba, _image_view, keterangan, _opsi]
+    
     edit:
+        title: Form Pengisian Data Profil Wilayah
+        display: [id_peserta_lomba, file_foto_peserta, filename_baru, keterangan]
         fields:
             file_foto_peserta:
                 type: admin_input_file_tag

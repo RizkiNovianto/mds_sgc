@@ -3,3 +3,11 @@ generator:
   param:
     model_class:      Lomba
     theme:            default
+
+    fields:
+    list:
+        title: Data Perlombaan
+        display: [nama, tingkat, kategori, deskripsi, _opsi]
+    edit:
+        title: Form Pengisian Data Lomba
+        display: [nama, tingkat, kategori, deskripsi]

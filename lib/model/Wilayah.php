@@ -9,4 +9,9 @@
  */ 
 class Wilayah extends BaseWilayah
 {
+	public function __toString()
+    {
+		$passText = $this->getWilayah().'</br> - Kecamatan '.$this->getKecamatan().'</br> - Kelurahan '.$this->getKelurahan();
+        return $passText;
+    }	
 }

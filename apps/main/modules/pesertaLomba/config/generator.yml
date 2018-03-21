@@ -3,3 +3,28 @@ generator:
   param:
     model_class:      PesertaLomba
     theme:            default
+    
+    fields:
+        nama_tim:
+            name: Nama Tim
+        peserta:
+            name: Asal
+        lomba:
+            name: Kompetisi
+        id_peserta:
+            name: Asal
+        id_lomba:
+            name: Kompetisi
+        nama_penggerak_lingkungan:
+            name: Penggerak Lingkungan
+        tanggal_pendaftaran:
+            name: Tanggal Pendaftaran
+        program_kerja:
+            name: Program Kerja        
+            
+    list:
+        title: Data Peserta Kompetisi
+        display: [nama_tim, peserta, lomba, tahun, nama_penggerak_lingkungan, tanggal_pendaftaran,  program_kerja, catatan, _opsi]
+    edit:
+        title: Form Pengisian Data Peserta
+        display: [id_peserta, id_lomba, tahun, nama_tim, nama_penggerak_lingkungan, tanggal_pendaftaran, program_kerja, catatan]

@@ -3,7 +3,6 @@
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en">
     <!--<![endif]-->
             <!-- === BEGIN CONTENT === -->
             <div id="slideshow" class="bottom-border-shadow">
@@ -44,12 +43,12 @@
                         <!-- End Carousel Slideshow -->
                     </div>
                 </div>
-            </div>
+<!--            </div>
             <div id="icons" class="bottom-border-shadow">
                 <div class="container background-grey bottom-border">
                     <div class="row padding-vert-60">
                         <!-- Icons -->
-                        <div class="col-md-4 text-center">
+<!--                        <div class="col-md-4 text-center">
                             <img src="../images/Logo DKRTH Trans.png" style="height: 90px; margin-top: 50px ">
                         </div>
                         <div class="col-md-4 text-center">
@@ -59,9 +58,9 @@
                             <img src="../images/logo-pemkot-biru.png" style="height: 150px; margin-top: 25px">
                         </div>
                         <!-- End Icons -->
-                    </div>
+<!--                    </div>
                 </div>
-            </div>
+            </div>-->
             <div id="content" class="bottom-border-shadow">
                 <div class="container background-white bottom-border">
                     <div class="row margin-vert-30">
@@ -112,7 +111,7 @@
                             <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
                                 <a href="#">
                                     <figure class="animate fadeIn">
-                                        <img alt="image2" src="../images/Coming Soon.png">
+                                        <img alt="image2" src="../images/Under Const 1.png">
                                         <figcaption>
                                             <h3>Dalam Proses</h3>
                                             <span>Bagian ini masih dalam konstruksi</span>
@@ -138,7 +137,7 @@
                             <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
                                 <a href="#">
                                     <figure class="animate fadeInLeft">
-                                        <img alt="image4" src="../images/Coming Soon.png">
+                                        <img alt="image4" src="../images/In Progress.jpg">
                                         <figcaption>
                                             <h3>Dereng Rampung</h3>
                                             <span>Bagian ini masih dalam konstruksi</span>
@@ -232,59 +231,4 @@
                     </div>
                 </div>
             </div>  */?>
-            <!-- Footer -->
-            <div id="footer" class="background-grey">
-                <div class="container">
-                    <div class="row">
-                        <!-- Footer Menu -->
-                        <div id="footermenu" class="col-md-8">
-                            <ul class="list-unstyled list-inline">
-                                <?php /*<li>
-                                    <a href="#" target="_blank">Sample Link</a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">Sample Link</a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">Sample Link</a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">Sample Link</a>
-                                </li>*/?>
-                            </ul>
-                        </div>
-                        <!-- End Footer Menu -->
-                        <!-- Copyright -->
-                        <div id="copyright" class="col-md-4">
-                            <p class="pull-right">© Dinas Kebersihan dan Ruang Terbuka Hijau</br>
-                                Kota Surabaya, 2018</br>
-                                <span style="color: transparent">
-                                    Rizki Novianto, IT DKRTH</br>
-                                    Email: novianto.rizki091@gmail.com
-                                </span>
-                            </p>
-                        </div>
-                        <!-- End Copyright -->
-                    </div>
-                </div>
-            </div>
-            <!-- End Footer -->
-            <!-- JS -->
-            <script type="text/javascript" src="../assets/js/jquery.min.js" type="text/javascript"></script>
-            <script type="text/javascript" src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
-            <script type="text/javascript" src="../assets/js/scripts.js"></script>
-            <!-- Isotope - Portfolio Sorting -->
-            <script type="text/javascript" src="../assets/js/jquery.isotope.js" type="text/javascript"></script>
-            <!-- Mobile Menu - Slicknav -->
-            <script type="text/javascript" src="../assets/js/jquery.slicknav.js" type="text/javascript"></script>
-            <!-- Animate on Scroll-->
-            <script type="text/javascript" src="../assets/js/jquery.visible.js" charset="utf-8"></script>
-            <!-- Sticky Div -->
-            <script type="text/javascript" src="../assets/js/jquery.sticky.js" charset="utf-8"></script>
-            <!-- Slimbox2-->
-            <script type="text/javascript" src="../assets/js/slimbox2.js" charset="utf-8"></script>
-            <!-- Modernizr -->
-            <script src="../assets/js/modernizr.custom.js" type="text/javascript"></script>
-            <!-- End JS -->
-
 <!-- === END FOOTER === -->

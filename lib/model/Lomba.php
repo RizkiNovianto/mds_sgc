@@ -9,4 +9,9 @@
  */ 
 class Lomba extends BaseLomba
 {
+	public function __toString()
+    {
+		$passText = $this->getNama().' - Tingkat '.$this->getTingkat().' - Kategori '.$this->getKategori();
+        return $passText;
+    }
 }

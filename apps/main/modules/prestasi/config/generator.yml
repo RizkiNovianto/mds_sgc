@@ -4,7 +4,25 @@ generator:
     model_class:      Prestasi
     theme:            default
     
+    fields:
+        peserta_lomba:
+            name: Peserta Lomba
+        id_peserta_lomba:
+            name: Peserta Lomba
+        image_view:
+            name: Piagam
+        file_piagam:
+            name: File Piagam
+        filename_baru:
+            name: Nama File
+    
+    list:
+        title: Data Prestasi Peserta
+        display: [peserta_lomba, prestasi, _image_view, keterangan, _opsi]
+    
     edit:
+        title: Form Pengisian Data Prestasi
+        display: [id_peserta_lomba, prestasi, file_piagam, filename_baru, keterangan]
         fields:
             file_piagam:
                 type: admin_input_file_tag

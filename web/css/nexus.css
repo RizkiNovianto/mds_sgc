@@ -56,7 +56,7 @@ body {
   max-width: 1080px;
   padding-left: 40px;
   padding-right: 40px;
-  width: 100%;
+  min-width: 100%;
 }
 .container.no-padding {
   padding-left: 20px !important;
@@ -793,7 +793,7 @@ p.site-slogan {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 #hornav ul ul:before {
-  background: transparent url('../img/menu_arrow.png') no-repeat 0 0;
+  background: transparent url('../images/menu_arrow.png') no-repeat 0 0;
   content: "";
   display: block;
   height: 10px;
@@ -1173,7 +1173,7 @@ p {
   margin-bottom: 16px;
 }
 hr {
-  background: url("../img/hr.png") no-repeat scroll 50% 0 transparent;
+  background: url("../images/hr.png") no-repeat scroll 50% 0 transparent;
   border: medium none;
   height: 19px;
   margin: 20px 0 20px;
@@ -1234,13 +1234,13 @@ ul.star li {
   padding: 4px 22px;
 }
 ul.tick li {
-  background: url("../img/typo/tick.png") no-repeat scroll left center transparent;
+  background: url("../images/typo/tick.png") no-repeat scroll left center transparent;
 }
 ul.plus li {
-  background: url("../img/typo/plus.png") no-repeat scroll left center transparent;
+  background: url("../images/typo/plus.png") no-repeat scroll left center transparent;
 }
 ul.star li {
-  background: url("../img/typo/star.png") no-repeat scroll left center transparent;
+  background: url("../images/typo/star.png") no-repeat scroll left center transparent;
 }
 .label {
   font-weight: 300;
@@ -2227,109 +2227,109 @@ ul.social-icons li a:hover {
   transition-property: background-color;
 }
 .social-facebook a {
-  background: url(../img/social_icons/facebook.png);
+  background: url(../images/social_icons/facebook.png);
 }
 .social-facebook a:hover {
   background-color: #3b5998 !important;
 }
 .social-twitter a {
-  background: url(../img/social_icons/twitter.png);
+  background: url(../images/social_icons/twitter.png);
 }
 .social-twitter a:hover {
   background-color: #48c4d2 !important;
 }
 .social-googleplus a {
-  background: url(../img/social_icons/googleplus.png);
+  background: url(../images/social_icons/googleplus.png);
 }
 .social-googleplus a:hover {
   background-color: #d94a39 !important;
 }
 .social-youtube a {
-  background: url(../img/social_icons/youtube.png);
+  background: url(../images/social_icons/youtube.png);
 }
 .social-youtube a:hover {
   background-color: #f45750 !important;
 }
 .social-github a {
-  background: url(../img/social_icons/github.png);
+  background: url(../images/social_icons/github.png);
 }
 .social-github a:hover {
   background-color: #333333 !important;
 }
 .social-pinterest a {
-  background: url(../img/social_icons/pinterest.png);
+  background: url(../images/social_icons/pinterest.png);
 }
 .social-pinterest a:hover {
   background-color: #cb2027 !important;
 }
 .social-blogger a {
-  background: url(../img/social_icons/blogger.png);
+  background: url(../images/social_icons/blogger.png);
 }
 .social-blogger a:hover {
   background-color: #fb913f !important;
 }
 .social-dribbble a {
-  background: url(../img/social_icons/dribbble.png);
+  background: url(../images/social_icons/dribbble.png);
 }
 .social-dribbble a:hover {
   background-color: #ef5b92 !important;
 }
 .social-flickr a {
-  background: url(../img/social_icons/flickr.png);
+  background: url(../images/social_icons/flickr.png);
 }
 .social-flickr a:hover {
   background-color: #FD55AD !important;
 }
 .social-skype a {
-  background: url(../img/social_icons/skype.png);
+  background: url(../images/social_icons/skype.png);
 }
 .social-skype a:hover {
   background-color: #18b7f1 !important;
 }
 .social-digg a {
-  background: url(../img/social_icons/digg.png);
+  background: url(../images/social_icons/digg.png);
 }
 .social-digg a:hover {
   background-color: #2882c6 !important;
 }
 .social-linkedin a {
-  background: url(../img/social_icons/linkedin.png);
+  background: url(../images/social_icons/linkedin.png);
 }
 .social-linkedin a:hover {
   background-color: #71b2d0 !important;
 }
 .social-vimeo a {
-  background: url(../img/social_icons/vimeo.png);
+  background: url(../images/social_icons/vimeo.png);
 }
 .social-vimeo a:hover {
   background-color: #62a0ad !important;
 }
 .social-yahoo a {
-  background: url(../img/social_icons/yahoo.png);
+  background: url(../images/social_icons/yahoo.png);
 }
 .social-yahoo a:hover {
   background-color: #ab64bc !important;
 }
 .social-tumblr a {
-  background: url(../img/social_icons/tumblr.png);
+  background: url(../images/social_icons/tumblr.png);
 }
 .social-tumblr a:hover {
   background-color: #3a5976 !important;
 }
 .social-deviantart a {
-  background: url(../img/social_icons/deviantart.png);
+  background: url(../images/social_icons/deviantart.png);
 }
 .social-deviantart a:hover {
   background-color: #d0de21 !important;
 }
 .social-delicious a {
-  background: url(../img/social_icons/delicious.png);
+  background: url(../images/social_icons/delicious.png);
 }
 .social-delicious a:hover {
   background-color: #3274d1 !important;
 }
 .social-rss a {
-  background: url(../img/social_icons/rss.png);
+  background: url(../images/social_icons/instagram2.png);
 }
 .social-rss a:hover {
   background-color: #fe9900 !important;
@@ -2483,7 +2483,7 @@ ul.social-icons li a:hover {
   background-color: #fff;
 }
 .lbLoading {
-  background: #ffffff url(../img/slimbox/loading.gif) no-repeat center;
+  background: #ffffff url(../images/slimbox/loading.gif) no-repeat center;
 }
 #lbImage {
   position: absolute;
@@ -2504,13 +2504,13 @@ ul.social-icons li a:hover {
   left: 0;
 }
 #lbPrevLink:hover {
-  background: transparent url(../img/slimbox/prevlabel.gif) no-repeat 0 15%;
+  background: transparent url(../images/slimbox/prevlabel.gif) no-repeat 0 15%;
 }
 #lbNextLink {
   right: 0;
 }
 #lbNextLink:hover {
-  background: transparent url(../img/slimbox/nextlabel.gif) no-repeat 100% 15%;
+  background: transparent url(../images/slimbox/nextlabel.gif) no-repeat 100% 15%;
 }
 #lbBottom {
   font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
@@ -2526,7 +2526,7 @@ ul.social-icons li a:hover {
   float: right;
   width: 66px;
   height: 22px;
-  background: transparent url(../img/slimbox/closelabel.gif) no-repeat center;
+  background: transparent url(../images/slimbox/closelabel.gif) no-repeat center;
   margin: 5px 0;
   outline: none;
 }
